@@ -1,0 +1,19 @@
+/*Global*/
+
+* {
+background-color: #333;
+    font-size: 1.1rem;
+}
+
+.parent-div {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+/*Copy*/
+
+.copy {
+    color: blue;
+}
