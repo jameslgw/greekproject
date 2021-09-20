@@ -1,48 +1,33 @@
 import React, { useState } from 'react'
-import ToggleText from './toggleText'
-import Button from './button/button'
 import Pelopidas from './copy/Pelopidas'
 import Epaminondas from './copy/Epaminondas'
-
-// const App = () => {
-
-//   const myItem = 'myItem'
-
-//   return (
-//     <div>
-//       <ToggleText />
-//       <Button reveal='One' /> <Button reveal='Five' />
-//     </div>
-//   )
-// }
-
+import Intro from './copy/Intro'
+import Image from './images/image'
 
 const App = () => {
   const [show, setShow] = React.useState(true)
 
-  // const handleClick = () => {
-  //   setShow = () => {
-  //     (true);
-  //   }
-  // }
-
-
   return (
     <div className="parent-div">
-      <div className="row"><h1>Βοιωτία</h1><h1>Boiotia</h1></div>
-      <div className="row">
+      <div className="row1"><h1>Ἐπαμεινώνδας &nbsp; και &nbsp; Πελοπίδας</h1></div>
+      <div className="row2"><h3>Epaminondas &nbsp; and &nbsp; Pelopidas</h3></div>
+      <div className="row3">
+        < Intro />
+      </div>
+      <div className="row4">
+        < Image />
+        </div>
+      <div className="row5">
         <button onClick={() => setShow(true)}>Epaminondas</button>
         <button onClick={() => setShow(false)}>Pelopidas</button>
-        {
-          show ? < Epaminondas /> :
-            <Pelopidas />
-
-        }
-        {/* <button onClick={() => setShow(!show)}>Toggle</button> */}
       </div>
-    </div>
+      <div className="row6"> 
+        {
+          show ? < Epaminondas /> : <Pelopidas />
+        }
+      </div>
+      </div>
   )
 }
-
 
 export default App

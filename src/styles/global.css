@@ -1,19 +1,85 @@
-/*Global*/
+/* Global Styles */
 
 * {
-background-color: #333;
-    font-size: 1.1rem;
+font-family: 'Roboto Slab', serif;
+color: white;
+}
+
+body {
+background-color: #0C222B;
 }
 
 .parent-div {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10%;
+    margin: auto;
+    max-width: 500px;
 }
 
-/*Copy*/
+/* Buttons */
 
-.copy {
-    color: blue;
+button {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #FFFFFF;
+    margin: 0 1.5em 0.3em 1.5em;
+    border-radius: 3px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    color: #FFFFFF;
+    text-align: center;
+    transition: 200ms;
+    background-color: #1A4B54;
+}
+
+button:hover {
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: #3C584C;
+}
+
+/* Text Content */
+
+.row1, .row5, .row6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.row2 {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin-top: -8%;
+    letter-spacing: 0.08rem;
+}
+
+.row4 {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/* Image */
+
+img {
+object-fit: cover;
+height: auto;
+width: 90vw;
+max-width: 650px;
+border-radius: 5px;
+}
+
+/* H1 */
+
+h1 {
+    display: flex;
+    align-self: center;
+}
+
+/* P */
+
+p {
+    text-align: justify;
 }
